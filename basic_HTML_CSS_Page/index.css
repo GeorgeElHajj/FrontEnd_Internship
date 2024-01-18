@@ -1,98 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
-  header {
+header {
     background-color: #333;
     padding: 15px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  nav {
-    flex-grow: 1; 
-  }
+nav {
+    flex-grow: 1;
+}
 
-  nav ul {
+nav ul {
     list-style: none;
-    margin-left: 100px;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  nav li {
+nav li {
     margin-right: 20px;
-  }
+}
 
-  nav a {
+nav a {
     color: #fff;
     text-decoration: none;
     padding: 14px 0;
     display: inline-block;
     text-transform: uppercase;
     padding: 10px;
-  }
+    transition: background-color 0.5s ease;
+}
 
-  nav a:hover {
+nav a:hover {
     background-color: #777;
     border-radius: 10px;
 }
 
-  .logo {
+.logo {
     width: 65px;
     height: 50px;
-  }
+}
 
-  .banner {
+.icon {
+    font-size: 35px;
+    color: white;
+}
+
+.banner {
     position: relative;
     overflow: hidden;
-  }
-  
-  .banner-image {
+}
+
+.banner-image {
     width: 100%;
     height: auto;
-  }
+}
 
-  .banner h2 {
+.banner h2 {
     position: absolute;
-    top: 40%;
-    left: 38%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 2em;
-    z-index: 1; 
-  }
-  
-  .service-card {
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 400px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+    z-index: 1;
 }
-  
-  .service-card h3 {
+
+.service-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card h3 {
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  .service-card p {
+}
+
+.service-card p {
     color: #666;
-  }
-  
-  .service-card .btn {
+}
+
+.service-card .btn {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
@@ -100,66 +106,112 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-  }
-  
-  .service-card .btn:hover {
-    background-color: #555;
-  }
+    transition: background-color 0.5s ease;
+}
 
-  .contact-form {
-    margin: 20px auto;
+.service-card .btn:hover {
+    background-color: #555;
+}
+
+.contact-form {
+    margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
-    width: 400px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-  }
-  
-  .contact-form h3 {
+}
+
+.contact-form h3 {
     color: #333;
-  }
-  
-  .contact-form form {
+}
+
+.contact-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .contact-form label {
+}
+
+.contact-form label {
     margin-top: 10px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
     padding: 10px;
     margin-top: 5px;
     box-sizing: border-box;
-  }
-  
-  .contact-form .btn {
+}
+
+.contact-form .btn {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: green;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    text-transform: uppercase;
-  }
-  
-  .contact-form .btn:hover {
-    background-color: #555;
-  }
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
 
-  footer {
+.contact-form .btn:hover {
+    background-color: #555;
+}
+
+footer {
     background-color: #333;
-    padding: 10px;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: auto;
-    width: 100%;
-  }
+}
+
+.footer-col {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-col h3 {
+    color: #fff;
+}
+
+.footer-col a {
+    color: #00bcd4;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.5s ease;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.social {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.social:hover {
+    color: #00bcd4;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

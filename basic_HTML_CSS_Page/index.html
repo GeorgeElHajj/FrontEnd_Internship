@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-  <header>
+    <header>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact_us">Contact</a></li>
-      </ul>
-    </nav>
+        <img src="logo.png" alt="Logo" class="logo">
 
-    <img src="logo.png" alt="Logo" class="logo">
+        <nav>
 
-  </header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact_us">Contact</a></li>
+            </ul>
+        </nav>
 
-  <div class="banner">
-    <h2>Welcome to My Website</h2>
+        <a href="#" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
 
-    <img src="banner.jpg" alt="Banner Image" class="banner-image">
+    <div class="banner">
+        <h2>Welcome to My Website</h2>
 
-  </div>
+        <img src="banner.jpg" alt="Banner Image" class="banner-image">
 
-  <div id="services"  class="service-card">
+    </div>
 
-    <h3>Service Card</h3>
-    <p>Buy some new stuff</p>
-    <a href="#" class="btn">Learn More</a>
+    <div id="services" class="service-card">
 
-  </div>
+        <h3>Service Card</h3>
+        <p>Buy some new stuff</p>
+        <a href="#" class="btn">Learn More</a>
 
-  <div id="contact_us" class="contact-form">
+    </div>
 
-    <h3>Contact Us</h3>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <div id="contact_us" class="contact-form">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <h3>Contact Us</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-      <input type="submit" value="Submit" class="btn">
-    </form>
-  </div>
-  <footer>
-    <p> All rights reserved.</p>
-  </footer>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-col">
+            <h3>USEFUL LINKS</h3>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact_us">Contact</a>
+        </div>
+        <div class="footer-bottom">
+            <a href="#" class="social">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="social">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" class="social">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+
+        <p> All rights reserved.</p>
+    </footer>
 
 </body>
-</html>
 
+</html>
